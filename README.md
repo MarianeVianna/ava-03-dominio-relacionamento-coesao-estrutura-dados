@@ -205,7 +205,7 @@ try {
 System.out.println(vi2.getTotalPassagens() == 48); // qtd assentos onibus
 System.out.println(vi2.getTotalPassagensDisponiveis() == 46); // qtd assentos disp
 
-// ADICIONAR CASOS DE TESTE PARA PELO MENOS 2 SITUAÇÕES EXCEPCIONAISS
+// ADICIONAR CASOS DE TESTE PARA PELO MENOS 2 SITUAÇÕES EXCEPCIONAIS
 ```
 
 ### Atividade Teórica: Information expert (Especialista na informação) (0.3 pts)
