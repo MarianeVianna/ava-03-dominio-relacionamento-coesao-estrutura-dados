@@ -13,7 +13,7 @@ _Classroom link:_ <https://classroom.github.com/a/dkmD6RWV>
 - coesão
 - estrutura de dados (lista)
 
-#### Prazo: 2018-10-14 Peso: 1.7 pt
+#### Prazo: 2018-10-21 Peso: 1.7 pt
 
 **Regras**
 
@@ -189,12 +189,13 @@ embaixador.novoOnibus(1205, 48);
 Rodoviaria rod2 = new Rodoviaria("Bagé");
 rod2.criarViagem("Jaguarão", new Date(14, 10, 2018), new Time(8, 30),
                  embaixador.getFrota().getOnibus(1205));
-System.out.println(rod2.getViagem(2).getDestino().equals("Jaguarão"));
-System.out.println(rod2.getViagem(2).comprarPassagem(9).getCodigo().equals("000002.000001.09"));
+System.out.println(rod2.getViagem(1).getDestino().equals("Jaguarão"));
+System.out.println(rod2.getViagem(1).comprarPassagem(9).getCodigo().equals("000002.000001.09"));
 // comprar passagem
 Passagem pas2 = rod2.comprarPassagem(2, 10); // comprar passagem viagem 2 assento 10
 System.out.println(pas2.getCodigo().equals("000002.000002.10"));
-Viagem vi2 = rod2.getViagem();
+Viagem vi2 = rod2.getViagem(1);
+System.out.println(vi2.getCodigo() == 1);
 try {
   vi2.comprarPassagem(10);
 } catch (AssentoIndisponivelException e) {
